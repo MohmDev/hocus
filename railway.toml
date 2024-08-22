@@ -1,0 +1,11 @@
+[build]
+builder = "NIXPACKS"
+nixpacksConfigPath = "railway.build.yarn.toml"
+
+[deploy]
+region = "europe-west4"
+runtime = "V2"
+numReplicas = 1
+sleepApplication = false
+restartPolicyType = "ON_FAILURE"
+restartPolicyMaxRetries = 10
